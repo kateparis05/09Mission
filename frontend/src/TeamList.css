@@ -1,0 +1,35 @@
+/* TeamList.css */
+
+/* Create a responsive grid layout for the team cards */
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a flexible grid */
+    gap: 20px; /* Adds space between the cards */
+    padding: 20px; /* Adds padding around the grid */
+}
+
+/* Styling for each individual team card */
+.team-card {
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow to make the card stand out */
+    padding: 20px; /* Space inside each card */
+    text-align: center; /* Center-align text */
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.school-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.mascot-name,
+.team-location {
+    font-size: 1rem;
+    color: #555;
+}
